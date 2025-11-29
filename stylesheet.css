@@ -1,0 +1,67 @@
+body 	{
+	text-align: center;
+	color: gray;
+	background-color: black;
+	font-family: 'SUSE Mono', monospace;
+	font-size: 22px;
+	}
+	p 	{
+		color: white;
+	}
+	li 	{
+		color: white;
+	}
+	a 	{
+		color: red;
+	}
+	h1	{
+		color: #008080;
+	}
+	div{
+		display: inline-block;
+		margin: 50px 400px 50px 400px;
+		border: 2px solid white;
+		padding: 10px;
+	}
+	h2 {
+		color: #008080;
+		text-align: center;
+	}
+	ul	{
+		padding-left: 0;
+		list-style-position: inside;
+	}
+	.EHIS {
+		background-color: purple;
+		color: yellow;
+	}
+    .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+    .review-card {
+            background-color: #2a2a2a;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
+
+    .review-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+    .rating {
+            font-size: 1.2em;
+            color: gold;
+            margin-top: 10px;
+        }
+
+    footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+        }
+   
