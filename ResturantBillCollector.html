@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RestaurantBillCollector</title>
+</head>
+<body>
+<input type = "text" id="foodCost" placeholder="What did your food cost?">
+<input type = "text" id="drinkCost" placeholder="What did your drink cost?">
+
+<button onclick="calcTotals()">Price check</button>
+
+<script>
+function calcTotals() {
+
+let foodCost = Number(document.getElementById("foodCost").value);
+let drinkCost = Number(document.getElementById("drinkCost").value);
+
+let subTotal = foodCost + drinkCost;
+let afterTax = subTotal * 1.062;
+let finalTotal = afterTax * 1.15;
+document.write("Your subtotal is $" + subTotal.toFixed(2) + "<br>");
+document.write("After tax it becomes $" + afterTax.toFixed(2) + "<br>");
+document.write("After a 15% tip, the Grand total is $" + finalTotal.toFixed(2));
+}
+</script>
+</body>
+<!--Pseudocode
+start
+prompt user for "food cost"
+prompt user for "drink cost"
+
+when user clicks "price check" button
+
+convert foodCost and drinkCost to numbers
+
+calculate subTotal
+calculate afterTax
+calculate finalTotal
+
+display message "Your subtotal is $" subTotal
+display message "After tax it becomes $" afterTax
+display message "After a 15% tip, the Grand total is $" finalTotal
+
+end
